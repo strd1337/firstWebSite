@@ -1,0 +1,52 @@
+// compress: true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Block */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/company";
+@import "blocks/navigation";
+@import "blocks/burger";
+@import "blocks/logoteep";
+@import "blocks/aboutCompany";
+@import "blocks/companySocial";
+@import "blocks/works";
+@import "blocks/portfolio";
+@import "blocks/advantages";
+@import "blocks/reviews";
+@import "blocks/team";
+@import "blocks/news";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/contact";
+@import "blocks/form";
+@import "blocks/modalWorks";
+@import "blocks/authorization";

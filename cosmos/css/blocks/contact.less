@@ -1,0 +1,67 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+}
+
+.contact__left {
+    width: 47%;
+    padding: 30px;
+}
+
+.modal__title {
+    margin-bottom: 50px;
+    font-size: 45px;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal__subtitle {
+    font-size: 16px;
+    color: @black;
+    font-weight: 400;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.contact__info {
+    margin: 30px 0 45px;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: @black;
+}
+
+.contact__info_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__info_icon {
+    margin-right: 15px;
+}
+
+.text__right {
+    text-align: right;
+}
+
+.contact__right {
+    width: 53%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact__right-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}

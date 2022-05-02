@@ -1,0 +1,48 @@
+// main: ../style.less
+
+.burger {
+    display: none;
+    @media @tablet {
+        display: block;
+    }
+}
+
+.burger__icon {
+    cursor: pointer;
+    display: block;
+}
+
+.burger__inner {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: @black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.burger__link, .close__burger {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: @gray;
+    display: block;
+    transition: 0.3s;
+}
+
+.burger__inner a:hover {
+    color: @white;
+}
+
+.burger__inner .close__burger {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+

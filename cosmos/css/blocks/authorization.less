@@ -1,0 +1,161 @@
+// main: ../style.less
+
+.enter__contant {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter__forms {
+    background-color: fade(@gray, 30%);
+    padding: 10px;
+    width: 320px;
+}
+
+.enter__forms a {
+    text-decoration: none;
+    transition: .4s color linear;
+    color: @white;
+}
+
+.enter__forms a:hover {
+    color: @black;
+}
+
+.enter__forms ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.enter__forms input {
+    display: block;
+    width: 100%;
+}
+
+.tab {
+    color: @black;
+    font-weight: 700;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+
+.tab__active {
+    background-color: @gray;
+    color: @white;
+}
+
+.tab__form {
+    background-color: @gray;
+    display: none;
+    padding: 30px 20px 20px;
+}
+
+.tab__form.tab__active {
+    display: block;
+}
+
+.tab__form-input {
+    font-size: 16px;
+    border: 2px solid fade(@black, 50%);
+    padding: 12px 14px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    color: @gray;
+    outline: none;
+    transition: border-color 0.3s linear;
+    &:focus {
+        outline: 0;
+        border-color: @black;
+    }
+    &::placeholder {
+        color: @black;
+    }
+}
+
+.enter__social {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.recover {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.recover__ckbox {
+    cursor: pointer;
+    padding-left: 35px;
+    width: 260px;
+    display: block;
+    position: relative;
+}
+
+.recover__ckbox::before {
+    content: '';
+    position: absolute;
+    border: 2px solid @white;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+#ckbox:checked + label::before {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid @white;
+    border-bottom: 2px solid @white;
+    transform: rotate(40deg);
+    width: 12px;
+    height: 22px;
+    top: -4px;
+    right: -5px;
+}
+
+#ckbox:not(:checked),
+#ckbox:checked {
+    display: none;
+}
+
+.tab__form-button {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    color: @gray;
+    text-transform: uppercase;
+    border: 2px solid fade(@black, 50%);
+    background-color: @white;
+    font-family: inherit;
+    line-height: 46px;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 260px;
+    transition: color .4s linear;
+    transition: background-color .4s linear;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: @black;
+        color: @white;
+    }
+}
+
+.enter__forget {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}

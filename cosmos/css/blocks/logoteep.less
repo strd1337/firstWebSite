@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.logoteep {
+    background-image: url("../images/New_York.jpg");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+}
+
+.containter_logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.logoteep_title {
+    background-color: @black;
+    color: @white;
+    padding: 5px;
+    font-size: 45px;
+    letter-spacing: 10px;
+}

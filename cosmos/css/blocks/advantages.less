@@ -1,0 +1,50 @@
+// main: ../style.less
+
+.advantages {
+    margin-top: 105px;
+    padding: 55px 0px 40px;
+    background-image: url("../images/worker.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 285px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container__inner {
+    color: @white;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.advantage__item {
+    max-width: 360px;
+    padding: 20px;
+}
+
+.advantage__title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 60px 0px 15px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid @black;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url(../images/check.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.advantage__text {
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}

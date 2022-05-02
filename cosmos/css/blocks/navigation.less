@@ -1,0 +1,81 @@
+// main: ../style.less
+
+
+.navigation {
+    text-align: center;
+}
+
+.navigation__list {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    @media @tablet {
+        visibility: hidden;
+    }
+}
+
+.navigation__list > li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav__link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: @white;
+    text-decoration: none;
+    transition: background-color 0.5s, color 0.5s;
+    @media @tablet {
+        padding: 0;
+    }
+}
+
+.nav__link:hover{
+    color: @black;
+    background-color: @white;
+}
+
+.navigation__list > li:hover > ul a {
+    opacity: 1;
+}
+
+.navigation__list > li:hover > ul li {
+    opacity: 1;
+    height: 2.5rem;
+}
+
+.navigation__sub-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    white-space: nowrap;
+    background-color: @black;
+}
+
+.navigation__sub-list > li {
+    height: 0;
+    opacity: 0;
+    transition: height 0.5s, opacity 0.5s;
+}
+
+.nav__sub-link {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    color: @white;
+    text-decoration: none;
+    height: inherit;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.nav__sub-link:hover{
+    color: @black;
+    background-color: @white;
+}
+
