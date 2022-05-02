@@ -1,2 +1,2 @@
 # firstWebSite
-Single page cross-platform website with navigation bar, modal windows, slider, etc.
+Multi-page cross-platform website with authorization and registration, navigation bar, modal windows, slider, etc.
